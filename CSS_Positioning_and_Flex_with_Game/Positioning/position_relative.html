@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS</title>
+    <!--     CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--
+        - Selectors,
+        - pseudo,
+        - nth-child,
+        - float,
+        - border,
+        - margin and padding,
+        - text,
+        - height and width,
+        - forms,
+        - block and inline, 
+
+      -->
+
+      <style>
+        /* Position: Static (By default), Fixed, Sticky, Relative and Absolute */
+        .pos {
+            background-color: yellow;
+            border: 1px solid black; /*Giving border to div*/
+            display: inline-block; /*Make the divs inline or side by side*/
+            height: 70px; /* increase the height */
+            width: 70px; /* increase the width */
+            text-align: center; /* Align the div content/text at center */
+            border-radius: 7px; /* Make the div boxex curvy or border have got some curve */
+        }
+
+        #three {
+            position: relative;
+            top: 100px;
+            right: 50px;
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pos" id="one">One</div>
+        <div class="pos" id="two">Two</div>
+        <div class="pos" id="three">Three</div>
+        <div class="pos" id="four">Four</div>
+        <div class="pos" if="five">Five</div>    
+    </div>
+    <br><br><br>
+    <button class="btn btn-dark"><a href="../index.html">Back</a></button>
+</body>
+</html>
