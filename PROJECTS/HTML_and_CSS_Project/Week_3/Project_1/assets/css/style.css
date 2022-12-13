@@ -1,0 +1,293 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+
+/* Universal css Selector */
+
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-primary-color:#5955B3;
+    --bg-secondary-color:#3C2F60;
+    --text-gray:#acacac;
+    --bg-white:#fff;
+    font-size: small;
+} 
+
+/* let increase the size of the container */
+
+.container {
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 3rem 8rem 0;
+}
+
+/* navbar css starts from here  */
+.navbar-container {
+    display: flex; /* yeh navbar ke har list item ko logo ki row mein le aayega*/
+    justify-content: space-around; /* yeh ek proper space dega logo, navbar list items and buttons ko */
+    align-items: center; /* yeh <nav> ke sare elements ko center mein position kar deta hai*/
+    width: 100%;
+    height: 15vh;
+}
+
+.nav-button{
+    background-color: var(--bg-primary-color);
+    border-radius: 12px;
+    color: var(--bg-white);
+    padding:18px 32px;
+}
+
+.list {
+    width: 60%;
+    height: 100%;
+    display: flex; /* yeh column wise arrange list-items ko row or horizontly arrange  krte HomeAboutServicesPortfolioPricing without any space*/
+
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+
+}
+
+.list-item {
+    margin-left: 2rem /*32px*/; /*yeh list-items k beech 2rem or 32px (1rem = 16px and 2rem = 32px) ki space de dega*/
+
+    font-family: 'Poppins'; /*Yeh list items ki font change kar dega*/
+
+    color: grey; /*yeh list-items k color ko grey karega*/
+
+    cursor: pointer; /*yeh list-item par hovering krte samay mouse cursor ko pointer m change krega*/
+}
+
+.list-item:hover {
+    color: #000; /* yeh hovering krte samay list-items ko grey se black krne ka effect dega*/
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+
+.navbar-container div:nth-child(2){
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+.navbar-container div:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+
+.button-group .nav-button {
+    padding: 10px 20px;
+    background-color: #5955B3;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+}
+
+/* navbar ending */
+
+/* banner sections */
+
+.description {
+    color: grey;
+    font-family: 'Poppins';
+    margin-top: 30px;
+    padding-right: 120px;
+} 
+
+.btn {
+    padding: 20px 50px;
+    background-color: #5955B3;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    display: inline-block;
+    margin-top: 4rem;
+    width: max-content;
+}
+
+button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: opacity .3s ease-in-out;
+}
+
+button:hover{
+    opacity: 80%;
+}
+
+.heading-text span {
+    color: #5A56B3;
+}
+
+.heading-text{
+    font-size: 4vw;
+    color: var(--bg-secondary-color);
+}
+
+.heading-text span{
+    color: var(--bg-primary-color);
+}
+
+.description{
+    margin-inline: auto;
+}
+
+.banner-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.banner-container div:first-child{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.banner-container div:last-child {
+    height: 100%;
+    width: 60%;
+}
+
+.banner-container div:last-child img{
+    height: 100%;
+    width: 100%;
+}
+
+img [alt="banner-img"]{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 991px){
+
+    .container{
+        padding-inline: 4rem;
+        text-align: center;
+    }
+
+    .navbar-container .grow-list{
+        display: none;
+    }
+
+    .banner-container{
+        margin-top: 4rem;
+        flex-direction: column;
+        text-align: center;
+        row-gap: 4rem;
+    }
+
+    .banner-container .btn{
+        margin-inline: auto;
+    }
+
+    .heading-text{
+        font-size: 4rem;
+        padding-inline: 2rem;
+    }
+
+    .description{
+        margin-inline: auto;
+        flex-direction: column;
+    }
+
+
+    .banner-container div:first-child {
+        width: 100%;
+    }
+
+    .banner-container div:last-child{
+        width: 100%;
+    }
+
+    img [alt="banner-img"]{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media  screen and (max-width: 767px) {
+    .container{
+        padding-inline: 2rem;
+        text-align: center;
+    }
+    .description{
+        flex-direction: column;
+        margin-inline: auto;
+    }
+    img [alt="banner-img"]{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+    @media screen and (max-width: 600px){
+        .container{
+            text-align: center;
+            padding-inline: 24px;
+        }
+        img [alt="banner-img"]{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .description{
+            flex-direction: column;
+            margin-inline: auto;
+        }
+    }
+    
+    @media screen and (max-width: 500px){
+        .container{
+            text-align: center;
+            padding-inline: 18px;
+        }
+        .description{
+            flex-direction: column;
+            margin-inline: auto;
+        }
+        img [alt="banner-img"]{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    @media screen and (max-width: 450px){
+        .container{
+            padding-inline: 14px;
+        }
+        .description{
+            flex-direction: column;
+            margin-inline: auto;
+        }
+        img [alt="banner-img"]{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+}
