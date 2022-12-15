@@ -221,6 +221,7 @@ img[alt="logo"]{
     width:55%;
 }
 
+
 @media (max-width:1000px){
     .container{
         padding-inline: 4rem;
