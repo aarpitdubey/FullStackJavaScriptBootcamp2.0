@@ -1,0 +1,1137 @@
+/* You can not modify anything from the HTML file */
+/* You can only modify the CSS file */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: x-small;
+    --bg-white: #fff;
+    --bg-primary-color: #000000;
+}
+
+body {
+    background-color: #fff;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 400;
+}
+
+li {
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+ img[alt="brand-logo"]{
+    width: 110px;
+    margin-top: 5%;
+    margin-left: 20%;
+ }
+
+section[aria-label="navbar"]{
+    padding: 2rem 2rem;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 4rem;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.list li{
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.list li::after{
+    content: '';
+    position: absolute;
+    bottom: -0.4rem;
+    left: 0;
+    width: 0%;
+    height: 0.2rem;
+    background-color: #000000;
+    transition: width 0.4s ease-in-out;
+}
+
+.list li:hover::after{
+    width: 70%;
+}
+
+.list li:first-child::after{
+    width: 70%;
+}
+
+svg:hover{
+    /* background-color: #d61212; */
+    position:relative;
+    width: 30px;
+    transition: width 0.9s ease-in-out;
+    
+}
+ 
+.button-group{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.nav-button{
+    background-color: transparent;
+    font-family: "Poppins",sans-serif;
+    font-size: 1.4rem;
+    padding: 5px 38px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.4s ease-in-out;
+}
+
+/* hero  section */
+
+.hero-container{
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    text-align: center;
+    left: -4%;
+}
+
+.square,.star,.globe{
+    position: absolute;
+    display: none;
+}
+
+.star{
+    display: inline-block;
+    top: 2%;
+    right: 10%;
+}
+
+.star:nth-child(2){
+    top: 80%;
+    left: 10%;
+}
+
+#star1 img{
+    width: 40px;
+    margin-top: 3%;
+    margin-right: 5%;
+   
+}
+
+#star2 img {
+    width: 40px;
+    margin-top: 120%;
+    margin-left: -120%;
+}
+.globe{
+    display: inline-block;
+    top: 5%;
+    left: 60%;
+}
+
+.globe:hover {
+    position: absolute;
+    animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.globe img{
+    width: 50px;
+    /* margin-top: -40%; */
+    margin-left: -230%;
+}
+
+img[alt="person-hero-iamge"]{
+
+    max-width: 360px;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+img[alt="person-hero-iamge"]:hover{
+
+    max-width: 370px;
+    max-height: 415px;
+    object-fit: cover;
+    /* transition: max-width 0.9s ease-in-out; */
+    transition: max-height 0.9s ease-in-out;
+}
+
+div img[alt="person-hero-iamge"]{
+    position: absolute;
+    top: 52%;
+    left: 10%;
+    translate: 0 -55%;
+}
+
+.square{
+    display: inline-block;
+    z-index: -1;
+    top: 40%;
+    left: 10%;
+    translate: 0 -20%;
+}
+
+.square img{
+    width: 250px;
+    height: 250px;
+    margin-top: 45%;
+    margin-right: -100%;
+}
+
+.hero-container-right{
+    width: 60%;
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 2rem;
+    margin-top: 10%;
+    /* margin-right: 4%; */
+}
+
+.hero-heading{
+    font-size: 5rem;
+}
+
+.hero-description{
+    font-size: 1.4rem;
+    font-family: "Poppins";
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+.button-email,.button-join{
+    font-family: "Orbitron";
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.button-email{
+    background-color: transparent;
+    padding: 1rem 4rem;
+}
+
+.button-email:hover {
+    /* font-size: 1.5rem; */
+    background-color: #000000;
+    color: #fff;
+    transition: color 0.6s ease-in-out;
+
+}
+
+.button-join{
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.button-join:hover {
+    background-color: transparent;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-heading{
+    font-size: 1.4rem;
+    font-family: "Poppins";
+    font-weight: 400;
+    /* margin-top: 4rem; */
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+
+}
+
+.icons span img{
+    width: 30px;
+    cursor: pointer;
+}
+
+/*Contact*/
+.contact {
+    margin-left: 10%;
+}
+
+@media screen and (max-width:1150px){
+
+    .list{
+        display: none;
+    }
+
+    .li{
+        display: none;
+    }
+
+    .hero-heading{
+        font-size: 3rem;
+    }
+
+    .hero-description,.button-large{
+        font-size: 4rem;
+        font-size:xx-small ;
+
+    }
+    .hero-container-right{
+        width: 60%;
+        display:flex;
+        gap: 6rem;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        padding-inline: 4rem;
+        margin-top: 10%;
+        margin-right: 0%;
+    }
+
+    img[alt="person-hero-iamge"]{
+
+        max-width: 380px;
+        /* max-height: 380px; */
+        object-fit: cover;
+        /* transition: max-width 0.9s ease-in-out; */
+        transition: max-height 0.9s ease-in-out;
+    }
+    img[alt="person-hero-iamge"]:hover{
+
+        max-width: 390px;
+        /* max-height: 415px; */
+        object-fit: cover;
+        transition: max-width 0.9s ease-in-out;
+        /* transition: max-height 0.9s ease-in-out; */
+    }
+
+    description{
+        margin-inline: auto;
+    }
+
+    .hero-description {
+    font-size: 1.2rem;
+    font-family: "Poppins";
+    max-width: 406px;
+    margin-inline: auto;
+    }
+
+    .banner-container div:first-child {
+        width: 100%;
+    }
+
+    .banner-container div:last-child{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:980px){
+
+    .list{
+        display: none;
+    }
+
+    .li{
+        display: none;
+    }
+
+    .hero-heading{
+        font-size: 3rem;
+    }
+
+    .hero-description,.button-large{
+        font-size: 4rem;
+
+    }
+    .hero-container-right{
+        width: 40%;
+        display:flex;
+        letter-spacing: 2px;
+        gap: 8rem;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        padding-inline: 4rem;
+        margin-top: 10%;
+        margin-right: 0%;
+    }
+
+    /* img[alt="person-hero-iamge"]. .square {} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: x-small;
+    --bg-white: #fff;
+    --bg-primary-color: #000000;
+}
+
+body {
+    background-color: #fff;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 400;
+}
+
+li {
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+ img[alt="brand-logo"]{
+    width: 110px;
+    margin-top: 5%;
+    margin-left: 20%;
+ }
+
+section[aria-label="navbar"]{
+    padding: 2rem 2rem;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 4rem;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.list li{
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.list li::after{
+    content: '';
+    position: absolute;
+    bottom: -0.4rem;
+    left: 0;
+    width: 0%;
+    height: 0.2rem;
+    background-color: #000000;
+    transition: width 0.4s ease-in-out;
+}
+
+.list li:hover::after{
+    width: 70%;
+}
+
+.list li:first-child::after{
+    width: 70%;
+}
+
+svg:hover{
+    /* background-color: #d61212; */
+    position:relative;
+    width: 30px;
+    transition: width 0.9s ease-in-out;
+    
+}
+ 
+.button-group{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.nav-button{
+    background-color: transparent;
+    font-family: "Poppins",sans-serif;
+    font-size: 1.4rem;
+    padding: 5px 38px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.4s ease-in-out;
+}
+
+/* hero  section */
+
+.hero-container{
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    text-align: center;
+    left: -4%;
+}
+
+.square,.star,.globe{
+    position: absolute;
+    display: none;
+}
+
+.star{
+    display: inline-block;
+    top: 2%;
+    right: 10%;
+}
+
+.star:nth-child(2){
+    top: 80%;
+    left: 10%;
+}
+
+#star1 img{
+    width: 40px;
+    margin-top: 3%;
+    margin-right: 5%;
+   
+}
+
+#star2 img {
+    width: 40px;
+    margin-top: 120%;
+    margin-left: -120%;
+}
+.globe{
+    display: inline-block;
+    top: 5%;
+    left: 60%;
+}
+
+.globe:hover {
+    position: absolute;
+    animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.globe img{
+    width: 50px;
+    /* margin-top: -40%; */
+    margin-left: -230%;
+}
+
+img[alt="person-hero-iamge"]{
+
+    max-width: 360px;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+img[alt="person-hero-iamge"]:hover{
+
+    max-width: 370px;
+    max-height: 415px;
+    object-fit: cover;
+    /* transition: max-width 0.9s ease-in-out; */
+    transition: max-height 0.9s ease-in-out;
+}
+
+div img[alt="person-hero-iamge"]{
+    position: absolute;
+    top: 52%;
+    left: 10%;
+    translate: 0 -55%;
+}
+
+.square{
+    display: inline-block;
+    z-index: -1;
+    top: 40%;
+    left: 10%;
+    translate: 0 -20%;
+}
+
+.square img{
+    width: 250px;
+    height: 250px;
+    margin-top: 45%;
+    margin-right: -100%;
+}
+
+.hero-container-right{
+    width: 60%;
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 2rem;
+    margin-top: 10%;
+    /* margin-right: 4%; */
+}
+
+.hero-heading{
+    font-size: 5rem;
+}
+
+.hero-description{
+    font-size: 1.4rem;
+    font-family: "Poppins";
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+.button-email,.button-join{
+    font-family: "Orbitron";
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.button-email{
+    background-color: transparent;
+    padding: 1rem 4rem;
+}
+
+.button-email:hover {
+    /* font-size: 1.5rem; */
+    background-color: #000000;
+    color: #fff;
+    transition: color 0.6s ease-in-out;
+
+}
+
+.button-join{
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.button-join:hover {
+    background-color: transparent;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-heading{
+    font-size: 1.4rem;
+    font-family: "Poppins";
+    font-weight: 400;
+    /* margin-top: 4rem; */
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+
+}
+
+.icons span img{
+    width: 30px;
+    cursor: pointer;
+}
+
+/*Contact*/
+.contact {
+    margin-left: 10%;
+}
+
+@media screen and (max-width:1150px){
+
+    .list{
+        display: none;
+    }
+
+    .li{
+        display: none;
+    }
+
+    .hero-heading{
+        font-size: 3rem;
+    }
+
+    .hero-description,.button-large{
+        font-size: 4rem;
+        font-size:xx-small ;
+
+    }
+    .hero-container-right{
+        width: 60%;
+        display:flex;
+        gap: 6rem;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        padding-inline: 4rem;
+        margin-top: 10%;
+        margin-right: 0%;
+    }
+
+    img[alt="person-hero-iamge"]{
+
+        max-width: 380px;
+        /* max-height: 380px; */
+        object-fit: cover;
+        /* transition: max-width 0.9s ease-in-out; */
+        transition: max-height 0.9s ease-in-out;
+    }
+    img[alt="person-hero-iamge"]:hover{
+
+        max-width: 390px;
+        /* max-height: 415px; */
+        object-fit: cover;
+        transition: max-width 0.9s ease-in-out;
+        /* transition: max-height 0.9s ease-in-out; */
+    }
+
+    description{
+        margin-inline: auto;
+    }
+
+    .hero-description {
+    font-size: 1.2rem;
+    font-family: "Poppins";
+    max-width: 406px;
+    margin-inline: auto;
+    }
+
+    .banner-container div:first-child {
+        width: 100%;
+    }
+
+    .banner-container div:last-child{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:980px){
+
+    .list{
+        display: none;
+    }
+
+    .li{
+        display: none;
+    }
+
+    .hero-heading{
+        font-size: 3rem;
+    }
+
+    .hero-description,.button-large{
+        font-size: 4rem;
+
+    }
+    .hero-container-right{
+        width: 40%;
+        display:flex;
+        letter-spacing: 2px;
+        gap: 8rem;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        padding-inline: 4rem;
+        margin-top: 10%;
+        margin-right: 0%;
+    }
+
+    .hero-container-left, .hero-container-right {
+        top: 70%;
+    }
+    img[alt="person-hero-iamge"]{
+        
+        max-width: 380px;
+        /* max-height: 380px; */
+        object-fit: cover;
+        /* transition: max-width 0.9s ease-in-out; */
+        transition: max-height 0.9s ease-in-out;
+    }
+    img[alt="person-hero-iamge"]:hover{
+
+        max-width: 390px;
+        /* max-height: 415px; */
+        object-fit: cover;
+        transition: max-width 0.9s ease-in-out;
+        /* transition: max-height 0.9s ease-in-out; */
+    }
+
+    /* description{
+        margin-inline: auto;
+    } */
+
+    .hero-description {
+    font-size: 1.2rem;
+    font-family: "Poppins";
+    max-width: 406px;
+    margin-inline: auto;
+    }
+
+
+    #star2 img {
+     width: 40px;
+    margin-top: 0%;
+    margin-left: -120%;
+    }
+    .globe img {
+        margin-top: -10%;
+    }
+
+    .contact{
+        margin-left: -150%;
+    }
+}
+
+@media screen and (max-width:769px){
+
+    .list{
+        display: none;
+    }
+
+    .li{
+        display: none;
+    }
+
+    .hero-heading{
+        font-size: 4rem;
+        margin-right: 300%;
+    }
+
+    .hero-description,.button-large{
+        font-size: 4rem;
+        font-size:xx-small ;
+
+    }
+    .hero-description {
+        width: 100%;
+        display:flex;
+        gap: 12rem;
+        flex-direction:column;
+        /* align-items:center;
+        justify-content: center; */
+        padding-inline: 1rem;
+        margin-top: 50%;
+        /* margin-bottom: -100%; */
+    }
+    .hero-heading{
+        width: 230%;
+        justify-content: center;
+    }
+    .hero-button {
+        margin-top: 30%;
+        margin-left: -300%;
+    }
+
+    img[alt="person-hero-iamge"]{
+        /* margin-right: 90%; */
+        margin-top: 5%;
+        max-width: 600px;
+        /* max-height: 380px; */
+        object-fit: cover;
+        /* transition: max-width 0.9s ease-in-out; */
+        transition: max-height 0.9s ease-in-out;
+    }
+    img[alt="person-hero-iamge"]:hover{
+
+        max-width: 610px;
+        /* max-height: 415px; */
+        object-fit: cover;
+        transition: max-width 0.9s ease-in-out;
+        /* transition: max-height 0.9s ease-in-out; */
+    }
+
+    /* description{
+        margin-inline: auto;
+    } */
+
+    .hero-description {
+    font-size: 1.2rem;
+    font-family: "Poppins";
+    max-width: 406px;
+    margin-inline: auto;
+    }
+
+    #star1 img {
+        margin-right: 70%;
+        margin-top: 25%;
+    }
+    .banner-container div:first-child {
+        width: 100%;
+    }
+
+    .banner-container div:last-child{
+        width: 100%;
+    }
+}
+@media screen and (max-width:700px) {
+    /* .navbar{
+        padding: 1.5rem 2rem;
+    } */
+    .hero-description {
+        vertical-align: bottom;
+    }
+    img[alt="person-hero-iamge"]{
+        /* margin-right: 90%; */
+        margin-top: 5%;
+        vertical-align: top;
+        max-width: 600px;
+        /* max-height: 380px; */
+        object-fit: cover;
+        /* transition: max-width 0.9s ease-in-out; */
+        transition: max-height 0.9s ease-in-out;
+    }
+    img[alt="person-hero-iamge"]:hover{
+
+        max-width: 610px;
+        /* max-height: 415px; */
+        object-fit: cover;
+        transition: max-width 0.9s ease-in-out;
+        /* transition: max-height 0.9s ease-in-out; */
+    }
+
+
+        
+    }
+    img[alt="person-hero-iamge"]{
+        
+        max-width: 380px;
+        /* max-height: 380px; */
+        object-fit: cover;
+        /* transition: max-width 0.9s ease-in-out; */
+        transition: max-height 0.9s ease-in-out;
+    }
+    img[alt="person-hero-iamge"]:hover{
+
+        max-width: 390px;
+        /* max-height: 415px; */
+        object-fit: cover;
+        transition: max-width 0.9s ease-in-out;
+        /* transition: max-height 0.9s ease-in-out; */
+    }
+
+    /* description{
+        margin-inline: auto;
+    } */
+
+    .hero-description {
+    font-size: 1.2rem;
+    font-family: "Poppins";
+    max-width: 406px;
+    margin-inline: auto;
+    }
+
+
+    .contact{
+        margin-left: -150%;
+    }
+}
+
+@media screen and (max-width:769px){
+
+    .list{
+        display: none;
+    }
+
+    .li{
+        display: none;
+    }
+
+    .hero-heading{
+        font-size: 4rem;
+        margin-right: 300%;
+    }
+
+    .hero-description,.button-large{
+        font-size: 4rem;
+        font-size:xx-small ;
+
+    }
+    .hero-description {
+        width: 100%;
+        display:flex;
+        gap: 12rem;
+        flex-direction:column;
+        /* align-items:center;
+        justify-content: center; */
+        padding-inline: 1rem;
+        margin-top: 50%;
+        /* margin-bottom: -100%; */
+    }
+    .hero-heading{
+        width: 230%;
+        justify-content: center;
+    }
+    .hero-button {
+        margin-top: 30%;
+        margin-left: -300%;
+    }
+
+    img[alt="person-hero-iamge"]{
+        /* margin-right: 90%; */
+        margin-top: 5%;
+        max-width: 600px;
+        /* max-height: 380px; */
+        object-fit: cover;
+        /* transition: max-width 0.9s ease-in-out; */
+        transition: max-height 0.9s ease-in-out;
+    }
+    img[alt="person-hero-iamge"]:hover{
+
+        max-width: 610px;
+        /* max-height: 415px; */
+        object-fit: cover;
+        transition: max-width 0.9s ease-in-out;
+        /* transition: max-height 0.9s ease-in-out; */
+    }
+
+    /* description{
+        margin-inline: auto;
+    } */
+
+    .hero-description {
+    font-size: 1.2rem;
+    font-family: "Poppins";
+    max-width: 406px;
+    margin-inline: auto;
+    }
+
+    #star1 img {
+        margin-right: 70%;
+        margin-top: 25%;
+    }
+    .banner-container div:first-child {
+        width: 100%;
+    }
+
+    .banner-container div:last-child{
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px) {
+    /* .navbar{
+        padding: 1.5rem 2rem;
+    } */
+    .hero-description {
+        vertical-align: bottom;
+    }
+    .hero-heading {
+        margin-top: 40%;
+        width: 100%;
+    }
+    img[alt="person-hero-iamge"]{
+        /* margin-right: 90%; */
+        margin-top: 5%;
+        vertical-align: top;
+        max-width: 600px;
+        /* max-height: 380px; */
+        object-fit: cover;
+        /* transition: max-width 0.9s ease-in-out; */
+        transition: max-height 0.9s ease-in-out;
+    }
+    img[alt="person-hero-iamge"]:hover{
+
+        max-width: 610px;
+        /* max-height: 415px; */
+        object-fit: cover;
+        transition: max-width 0.9s ease-in-out;
+        /* transition: max-height 0.9s ease-in-out; */
+    }
+
+}
+@media screen and (max-width:280px) {
+    /* .navbar{
+        padding: 1.5rem 2rem;
+    } */
+
+    .button-group {
+        display: none;
+    }
+    
+    .hero-description {
+        vertical-align: bottom;
+        margin-top: 3000%;
+        
+    }
+    .hero-heading {
+        margin-top: 450%;
+        margin-left: -400%;
+        width: 100%;
+
+    }
+    img[alt="person-hero-iamge"]{
+        /* margin-right: 90%; */
+        margin-top: 5%;
+        vertical-align: top;
+        max-width: 200px;
+        /* max-height: 380px; */
+        object-fit: cover;
+        /* transition: max-width 0.9s ease-in-out; */
+        transition: max-height 0.9s ease-in-out;
+    }
+    img[alt="person-hero-iamge"]:hover{
+
+        max-width: 210px;
+        /* max-height: 415px; */
+        object-fit: cover;
+        transition: max-width 0.9s ease-in-out;
+        /* transition: max-height 0.9s ease-in-out; */
+    }
+
+}

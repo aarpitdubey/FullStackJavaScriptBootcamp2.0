@@ -1,1 +1,0 @@
-# FullStackJavaScriptBootcamp2.0
