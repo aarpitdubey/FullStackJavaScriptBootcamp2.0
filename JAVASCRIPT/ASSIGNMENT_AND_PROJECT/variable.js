@@ -1,4 +1,5 @@
 // Q1. Create a variable.js file and declare variables and assign string, boolean, undefined and null data types, Display all the value with their data type.
+
 console.log("\n**************************************************************************************************");
 console.log("Solution 1: Display all the value with their data type.\n");
 console.log(`Variables:                Values:                          Data Structure:`);
@@ -29,14 +30,18 @@ let age            = 27
 
 console.log(`Hi, my name is Mr. ${first_name} ${last_name}.\nI'm ${marital_status} by my girlfriend.\nI lived in ${country}, and I'm ${age} years old.\n\nThanks for your attention\n`);
 console.log("**************************************************************************************************");
+
 //********************************************************************************
+
 //Q3. Declare a varibale and assign string value to it and change all the string characters to capital letters using toUpperCase() method.
 
 console.log("Solution 3: Display change to the string characters to capital letters using toUpperCase() method\n");
 let upper_case_string_value = "arpit dubey"
 console.log(`1. Value of variable before using toUpperCase() method :\n\n             "${upper_case_string_value}"\n\n2. Value of variable after using toUpperCase() method :\n\n             "${upper_case_string_value.toUpperCase()}"\n`);
 console.log("**************************************************************************************************");
+
 //********************************************************************************
+
 //Q4. Declare a variable and assign string value to it and check if the string contains a word Script using includes() method.
 
 console.log(`Solution 4: Check if the string contains "lightweight" word using includes() method\n`);
@@ -49,6 +54,7 @@ console.log(`Ques: Is JAVASCRIPT is a lightweight programming language? \nAns:  
 console.log("**************************************************************************************************");
 
 //********************************************************************************
+
 //Q5. Declare a varibale and assign string value to it and then split it into an array using split() method
 console.log(`Solution 5: Declaring a variable & Assigning value and spliting in an array using split() method. \n`);
 
@@ -81,6 +87,7 @@ console.log(companies);
 console.log(`\ncompanies is a string object after using companies.split(",") Is it become an array? : ${Array.isArray(companies)}\n`)
 
 console.log("**************************************************************************************************");
+
 //********************************************************************************
 
 //Q7. Declare an array containing the multiple values and use lastIndexOf to determine the position of the first and last occurrence of a word "pw skills".
