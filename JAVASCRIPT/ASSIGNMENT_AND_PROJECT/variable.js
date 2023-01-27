@@ -92,6 +92,8 @@ console.log("*******************************************************************
 
 //Q7. Declare an array containing the multiple values and use lastIndexOf to determine the position of the first and last occurrence of a word "pw skills".
 
+let array_ = ['pw skills', 'ineuron', 'Udacity',
+              'RRB Gate Lectures', 'Pepcoding', 'AlmaBetter', 'edWisor', 'AppliedAI', 'pw skills'];
 let word = "pw skills"
 
 console.log(word.lastIndexOf())

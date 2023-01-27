@@ -42,8 +42,9 @@ const obj4 = Object.create({})
 Object.defineProperty(obj4, 'book', {
     // icon: '📘'
     get: () => '📘',
-    enumerable: true
-})
+    enumerable: true // to make object enumerable because of object.defineProperty()
+}) // object.defineProperty() give control over the properties assign to an object. like getter and setter Encapsulation of javascript
+// get: () => '📘'
 
 // console.log(obj4);
 // console.log(obj4.book);
